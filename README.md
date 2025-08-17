@@ -17,7 +17,7 @@ Jay's Drawing Album is a web-based project showcasing a collection of digital dr
 
 - HTML5
 - CSS3
-- JavaScript (for future enhancements)
+- JavaScript
 
 ## Author
 
