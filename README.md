@@ -24,5 +24,5 @@ Jay's Drawing Album is a web-based project showcasing a collection of digital dr
 ### Web Developer: Ilysk
 - [GitHub Profile](https://github.com/Psychopatate-spec)
 
-### Drawins: Jay
+### Drawings: Jay
 - [Instagram](https://www.instagram.com/loafingjay/)
