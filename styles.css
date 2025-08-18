@@ -36,7 +36,8 @@ body.fullscreen-active {
   position: fixed;
   top: 0;
   left: 0;
-  width: 500px;
+  width: 50vw;
+  max-width: 500px;
   height: auto;
   z-index: 10;
   pointer-events: none;
@@ -45,7 +46,8 @@ body.fullscreen-active {
   position: fixed;
   top: 0;
   right: 0;
-  width: 500px;
+  width: 50vw;
+  max-width: 500px;
   height: auto;
   z-index: 10;
   pointer-events: none;
@@ -54,7 +56,8 @@ body.fullscreen-active {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 500px;
+  width: 50vw;
+  max-width: 500px;
   height: auto;
   z-index: 10;
   pointer-events: none;
@@ -63,7 +66,8 @@ body.fullscreen-active {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 500px;
+  width: 50vw;
+  max-width: 500px;
   height: auto;
   z-index: 10;
   pointer-events: none;
