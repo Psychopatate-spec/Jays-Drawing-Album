@@ -1,5 +1,6 @@
 /* styles.css */
 
+/* variables */
 :root {
   --card_width: 250px;
   --card_border_radius: 16px;
@@ -9,6 +10,7 @@
   --card_large: 45;
 }
 
+/* body */
 body {
   margin: 0;
   padding: 0;
@@ -16,11 +18,11 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 body.fullscreen-active {
   overflow: hidden;
 }
 
+/* UI/UX */
 #background {
   position: fixed;
   top: 0;
@@ -29,7 +31,46 @@ body.fullscreen-active {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}.overlay {
+}
+.corner-img-tl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+.corner-img-tr {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+.corner-img-bl {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+.corner-img-br {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* overlay */
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -50,6 +91,7 @@ body.fullscreen-active {
   background-color: rgba(0,0,0,0.5)
 }
 
+/**/
 nav {
   position: fixed;
   justify-content: center;
@@ -59,7 +101,6 @@ nav {
   z-index: 2;
   background: rgba(8, 76, 23, 0.8);
 }
-
 h1 {
   font-size: 50px;
   text-align: center;
@@ -68,6 +109,7 @@ h1 {
   padding: 20px 0;
 }
 
+/* cards */
 .pin_container {
   margin: 120px 0;
   padding: 10px 0;
@@ -78,59 +120,49 @@ h1 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
   display: grid;
   grid-template-columns: repeat(auto-fill, var(--card_width));
   grid-auto-rows: var(--row_increment);
   justify-content: center;
-
   background-color: rgba(193, 255, 185, 0.6);
 }
-
 .card {
   padding: 0px;
   margin: 15px 10px;
   border-radius: var(--card_border_radius);
   z-index: 1;
-
   background-color: rgb(13, 132, 67);
 }
-
 .card:hover {
   transform: scale(95%);
   transition: 0.1s ease-in-out;
 }
-
 .fullscreen {
   position: fixed;
-  inset: 0;
-  width: 90vw;
-  height: 90vh;
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 70vh;
   z-index: 4 !important;
-  margin: auto;
   box-shadow: 0 0 40px 10px rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
+  transition: none !important;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
-
 .fullscreen img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: var(--card_border_radius);
 }
-
-.card.fullscreen {
-  pointer-events: auto;
-  transition: none !important;
-}
-
 .card.fullscreen:hover {
   transform: none !important;
   cursor: default;
 }
-
 .card img {
   width: 100%;
   height: 100%;
@@ -138,7 +170,6 @@ h1 {
   border-radius: var(--card_border_radius);
   display: block;
 }
-
 .card_small {
   grid-row-end: span var(--card_small);
 }
@@ -149,6 +180,7 @@ h1 {
   grid-row-end: span var(--card_large);
 }
 
+/**/
 footer {
   margin: 50px 0;
   padding: 10px 0;
@@ -158,8 +190,6 @@ footer {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
   text-align: center;
-
   background-color: rgb(255, 244, 175);
 }
