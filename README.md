@@ -1,6 +1,6 @@
 # Jay's Drawing Album
 
-Jay's Drawing Album is a web-based project showcasing a collection of digital drawings and artworks. Built with HTML and CSS, the album provides an interactive and visually appealing gallery for users to browse and enjoy creative works.
+Jay's Drawing Album is a web-based project showcasing a collection of digital drawings and artworks. Built with HTML, CSS and Javascript, the album provides an interactive and visually appealing gallery for users to browse and enjoy creative works.
 
 ## Features
 
