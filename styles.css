@@ -135,6 +135,25 @@ h1 {
 .card_large {
   grid-row-end: span var(--card_large);
 }
+/* fullscreen */
+.fullscreenImages.isFullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+}
+.fullscreenImages .fullscreenImage {
+  position: relative;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: var(--card_border_radius);
+}
 
 /**/
 footer {
